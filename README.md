@@ -17,6 +17,7 @@ This folder contains implementations of common algorithms like sorting and searc
 -   `linearSearch.js` - Linear Search Algorithm
 -   `mergeSort.js` - Merge Sort Algorithm
 -   `quickSort.js` - Quick Sort Algorithm
+-   `selectionSort.js` - Selection Sort Algorithm
 
 ---
 
