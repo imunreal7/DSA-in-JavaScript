@@ -64,16 +64,16 @@ This folder includes various coding problems with solutions:
 
 ## 📖 How to Use
 
-**Clone the Repository**
+1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/your-username/dsa-in-javascript.git
+    git clone https://github.com/imunreal7/DSA-in-JavaScript.git
     cd dsa-in-javascript
     ```
 
-    Run Code Locally
+1. **Run Code Locally**
+
     Ensure you have Node.js installed.
-    Use a terminal or any IDE (e.g., VSCode) to execute files.
 
     ```bash
     node <file-name>.js
