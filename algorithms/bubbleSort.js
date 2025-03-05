@@ -12,7 +12,7 @@ function bubbleSort(arr) {
                 swapped = true;
             }
         }
-        n--; // Reduce the range of comparison as the largest element is already sorted
+        n--; // Reduce the range of comparison as the largest element is already sorted placed in the last
     } while (swapped);
     return arr;
 }
