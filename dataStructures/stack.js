@@ -29,7 +29,7 @@ class Stack {
         }
         let temp = this.first;
         this.first = this.first.next;
-        temp.next = null;
+        temp.next = null; // Clean reference for GC
         this.length--;
         return temp;
     }

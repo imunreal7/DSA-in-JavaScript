@@ -32,15 +32,25 @@ class HashTable {
     }
 
     getAllKeys() {
-        const keys = [];
-        for (let i = 0; i < this.keyMap.length; i++) {
-            if (this.keyMap[i]) {
-                for (let j = 0; j < this.keyMap[i].length; j++) {
-                    keys.push(this.keyMap[i][j][0]);
+        if (!this.data.length) {
+            return undefined;
+        }
+        let result = [];
+        // loop through all the elements
+        for (let i = 0; i < this.data.length; i++) {
+            // if it's not an empty memory cell
+            if (this.data[i] && this.data[i].length) {
+                // but also loop through all the potential collisions
+                if (this.data.length > 1) {
+                    for (let j = 0; j < this.data[i].length; j++) {
+                        result.push(this.data[i][j][0]);
+                    }
+                } else {
+                    result.push(this.data[i][0]);
                 }
             }
         }
-        return keys;
+        return result;
     }
 
     getAllValues() {
