@@ -1,6 +1,8 @@
 const startTime = performance.now();
 
-var myFunction = function () {};
+var myFunction = function () {
+    // code here
+};
 
 console.log(myFunction());
 
