@@ -26,7 +26,7 @@ var spiralOrder = function (matrix) {
     while (top <= bottom && left <= right) {
         // Traverse from left to right
         for (let i = left; i <= right; i++) {
-            result.push(matrix[top][i]);
+            result.push(matrix[top][i]); // rows(top) are fixed, cols(i) need to change
         }
         top++; // Move top boundary down
 
@@ -63,3 +63,4 @@ console.log(
         [7, 8, 9],
     ]),
 ); // [1,2,3,6,9,8,7,4,5]
+
